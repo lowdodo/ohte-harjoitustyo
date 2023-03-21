@@ -18,7 +18,7 @@
 <sub>vai toimiiko sittenkään??</sub>
 
 
-##linksulat
+## linksulat
 
 Tämä tässä on [gitlog harjoitus](https://github.com/lowdodo/ot-harjoitustyo/blob/master/laskarit/viikko1/gitlog.txt)
 
