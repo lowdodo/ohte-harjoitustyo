@@ -1,0 +1,112 @@
+commit da8d905cef73ac28209d3b768a304d79a8df2937
+Author: lowdodo <lowdodo@ad.helsinki.fi>
+Date:   Tue Mar 21 12:57:23 2023 +0200
+
+    file2 to file22
+
+ tiedostoja/{file2 => file22} | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 16799fe760f09e81949bff70f02bb8cc1a5b9630
+Author: lowdodo <lowdodo@ad.helsinki.fi>
+Date:   Tue Mar 21 12:56:55 2023 +0200
+
+    file1 poisto
+
+ tiedostoja/file1 | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit b6789f27c41714d819c7c83d48b6c058a0ec0553
+Author: lowdodo <lowdodo@ad.helsinki.fi>
+Date:   Tue Mar 21 12:52:15 2023 +0200
+
+    lisätitin hakemistoon kolme filettä
+
+ tiedostoja/file1 | 0
+ tiedostoja/file2 | 0
+ tiedostoja/file3 | 0
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+
+commit eabf98cbb47254412461d7e410de388cc3ea7666
+Author: lowdodo <lowdodo@ad.helsinki.fi>
+Date:   Tue Mar 21 12:46:37 2023 +0200
+
+    muutokset eka ja kolmas tct
+
+ eka.txt    | 3 ++-
+ kolmas.txt | 1 +
+ 2 files changed, 3 insertions(+), 1 deletion(-)
+
+commit 50f3ccd0c78efba2faa6bf01de1bb2f195523d9e
+Author: lowdodo <lowdodo@ad.helsinki.fi>
+Date:   Tue Mar 21 12:44:27 2023 +0200
+
+    uudellennim tiedosto to eka.txt
+
+ tiedosto.txt => eka.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit eb608e487066de9fb4a767dd5c9a3b7d031511c7
+Author: lowdodo <lowdodo@ad.helsinki.fi>
+Date:   Tue Mar 21 12:42:26 2023 +0200
+
+    poisto toinen.txt
+
+ toinen.txt | 1 -
+ 1 file changed, 1 deletion(-)
+
+commit 639b2bcd704f4ca7ed004dc932e550d03e6d9d54
+Author: lowdodo <lowdodo@ad.helsinki.fi>
+Date:   Thu Mar 16 15:37:05 2023 +0200
+
+    tiedosto.txt muutos
+
+ stuff/tiedosto.txt | 7 +------
+ 1 file changed, 1 insertion(+), 6 deletions(-)
+
+commit f61966f1d26d4ac1dde46dc58e171066e927470a
+Author: lowdodo <lowdodo@ad.helsinki.fi>
+Date:   Thu Mar 16 15:22:16 2023 +0200
+
+    tiedosto.txt lisäys
+
+ stuff/tiedosto.txt | 16 ++++++++++++++++
+ 1 file changed, 16 insertions(+)
+
+commit 4a9eb2e552b217602aa67e4882488814cc2c3b98
+Author: lowdodo <lowdodo@ad.helsinki.fi>
+Date:   Thu Mar 16 14:10:14 2023 +0200
+
+    juttuhommia tehty
+
+ stuff/juttuhommia.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 9c9295ffd13d0784c048ec045a8e657518ac4924
+Author: lowdodo <lowdodo@ad.helsinki.fi>
+Date:   Thu Mar 16 14:06:52 2023 +0200
+
+    kolmas.txt luotu
+
+ kolmas.txt | 4 ++++
+ toinen.txt | 1 +
+ 2 files changed, 5 insertions(+)
+
+commit fea3c6f31980a349d34ae15feb9438acfb06244f
+Author: lowdodo <lowdodo@ad.helsinki.fi>
+Date:   Thu Mar 16 13:40:30 2023 +0200
+
+    muutos ja lisäys
+
+ tiedosto.txt | 1 +
+ toinen.txt   | 0
+ 2 files changed, 1 insertion(+)
+
+commit 3a20bea5fb6afc214b67b421d671dc9996e0469d
+Author: lowdodo <lowdodo@ad.helsinki.fi>
+Date:   Thu Mar 16 13:33:54 2023 +0200
+
+    tiedosto.txt luotu
+
+ tiedosto.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
