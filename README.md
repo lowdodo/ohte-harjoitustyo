@@ -31,3 +31,4 @@ Tämä tässä on [unicafe harjoitus](https://github.com/lowdodo/ot-harjoitustyo
 
 Tämä tässä on [vaatimusmäärittely](https://github.com/lowdodo/ot-harjoitustyo/tree/master/dokumentaatio)
 
+Tämä tässä on [työaikakirjanpito](https://github.com/lowdodo/ot-harjoitustyo/blob/master/dokumentaatio/tyoaikakirjanpito.md)
