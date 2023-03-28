@@ -23,3 +23,8 @@ Tämä tässä on [gitlog harjoitus](https://github.com/lowdodo/ot-harjoitustyo/
 
 Tämä tässä on [komentorivi harjoitus](https://github.com/lowdodo/ot-harjoitustyo/blob/master/laskarit/viikko1/komentorivi.txt)
 
+## VIIKKO 2
+
+Tämä tässä on [maksukortti harjoitus](https://github.com/lowdodo/ot-harjoitustyo/tree/master/laskarit/viikko2/maksukortti)
+
+Tämä tässä on [unicafe harjoitus](https://github.com/lowdodo/ot-harjoitustyo/tree/master/laskarit/viikko2/unicafe)
