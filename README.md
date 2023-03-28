@@ -28,3 +28,6 @@ Tämä tässä on [komentorivi harjoitus](https://github.com/lowdodo/ot-harjoitu
 Tämä tässä on [maksukortti harjoitus](https://github.com/lowdodo/ot-harjoitustyo/tree/master/laskarit/viikko2/maksukortti)
 
 Tämä tässä on [unicafe harjoitus](https://github.com/lowdodo/ot-harjoitustyo/tree/master/laskarit/viikko2/unicafe)
+
+Tämä tässä on [vaatimusmäärittely](https://github.com/lowdodo/ot-harjoitustyo/tree/master/dokumentaatio)
+
