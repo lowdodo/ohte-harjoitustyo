@@ -8,7 +8,9 @@ Monopolia pelataan k채ytt채en kahta noppaa. Pelaajia on v채hint채채n 2 ja enint�
     classDiagram
 
         class Monopoly{lauta: Pelilauta
-        noppa: Tuple[Noppa, Noppa]} 
+        noppa: Tuple[Noppa, Noppa]
+        n = in range(2-8)
+        pelaajat: Pelaaja*n} 
 
         Monopoly -- Pelilauta
         Pelilauta -- Ruudut
@@ -17,32 +19,48 @@ Monopolia pelataan k채ytt채en kahta noppaa. Pelaajia on v채hint채채n 2 ja enint�
         Monopoly -- Pelaaja
         Monopoly -- Pankki
 
+        Monopoly --> Vankila: Monopoly tuntee sijainnin
+        Monopoly --> Aloitusruutu: Monopoly tuntee sijainnin
+
 
         class Pelilauta{ruudut = [Ruudut]}
 
         class Ruudut
 
-        class Pankki{id}
+        class Pankki{id
+        raha per pelaaja}
         
         Vankila --> Ruudut
         Aloitusruutu --> Ruudut
         Sattuma --> Ruudut
         Yhteismaa --> Ruudut
         Normaalit --> Ruudut
+        Ruudut --> Paikka
+
+
         class Vankila{vieraile()
         jaa()}
         class Aloitusruutu{rahaatulee(200)}
         class Sattuma{sattumakortti}
         class Yhteismaa{yhteismaakortti}
-        class Normaalit{kadunnimet}
-
+        class Normaali{nimi: [kadunnimi]
+        n: in range(1-4)
+        talo: Talo*n
+        omistaja: Player}
+ 
         class Noppa{silm채luku: int
         heitto()}
 
         class Pelaaja{id
-        maara: int}
+        nappula: Pelinappula
+        varat: int
+        heita()
+        siirto()
+        maksa()
+        }
 
-        class Pelinappula
+        class Pelinappula{paikka: Paikka}
+        Pelinappula --> Paikka
 
         class Talo{hinta: int}
         class Hotelli{hinta: int}
