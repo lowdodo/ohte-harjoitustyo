@@ -35,7 +35,8 @@ Monopolia pelataan käyttäen kahta noppaa. Pelaajia on vähintään 2 ja enint�
         Sattuma --> Ruudut
         Yhteismaa --> Ruudut
         Normaalit --> Ruudut
-        Ruudut --> Paikka
+        Ruudut --> Ruudut: tuntee viereisten sijainnin
+
 
 
         class Vankila{vieraile()
@@ -43,10 +44,10 @@ Monopolia pelataan käyttäen kahta noppaa. Pelaajia on vähintään 2 ja enint�
         class Aloitusruutu{rahaatulee(200)}
         class Sattuma{sattumakortti}
         class Yhteismaa{yhteismaakortti}
-        class Normaali{nimi: [kadunnimi]
+        class Normaalit{nimi: [kadunnimi]
         n: in range(1-4)
         talo: Talo*n
-        omistaja: Player}
+        omistaja: Pelaaja}
  
         class Noppa{silmäluku: int
         heitto()}
@@ -59,9 +60,17 @@ Monopolia pelataan käyttäen kahta noppaa. Pelaajia on vähintään 2 ja enint�
         maksa()
         }
 
-        class Pelinappula{paikka: Paikka}
-        Pelinappula --> Paikka
+        class Pelinappula{paikka: Ruudut}
+        class Kortti{yhteismaa
+        sattuma}
+        Yhteismaa ..> Kortti
+        Sattuma ..> Kortti
 
-        class Talo{hinta: int}
-        class Hotelli{hinta: int}
+        Talo --> Ruudut
+        Hotelli --> Ruudut
+        Talo --> Hotelli: Jos 5 taloa yhdessä ruudussa, muuttuu hotelliksi
+        class Talo{hinta: int
+        sijainti: Ruudut}
+        class Hotelli{hinta: int
+        sijainti: Ruudut}
 ```
