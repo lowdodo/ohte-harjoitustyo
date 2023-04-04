@@ -21,3 +21,5 @@ class BasicUI:
     def open_login(self):
         self.close_current()
 
+        self._open_login = LoginUI(self._root, self._tasks_view, self._newuser)
+

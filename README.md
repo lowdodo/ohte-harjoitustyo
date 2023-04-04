@@ -32,3 +32,10 @@ Tämä tässä on [unicafe harjoitus](https://github.com/lowdodo/ot-harjoitustyo
 Tämä tässä on [vaatimusmäärittely](https://github.com/lowdodo/ot-harjoitustyo/tree/master/dokumentaatio)
 
 Tämä tässä on [työaikakirjanpito](https://github.com/lowdodo/ot-harjoitustyo/blob/master/dokumentaatio/tyoaikakirjanpito.md)
+
+## VIIKKO 3
+
+Tämä tässä on [monopoly harjoitus](https://github.com/lowdodo/ot-harjoitustyo/blob/master/laskarit/viikko3/Monopoli_luokkakaavio.md)
+
+Tein harjoitustyöstä rungon, mutta yksikään juttu ei toiminut vielä sillä tavalla, että testiä olisi voinut tehdä ;=0
+
