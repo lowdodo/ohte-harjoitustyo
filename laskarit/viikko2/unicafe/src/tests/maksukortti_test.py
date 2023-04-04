@@ -25,3 +25,5 @@ class TestMaksukortti(unittest.TestCase):
         self.maksukortti.ota_rahaa(1500)
 
         self.assertEqual(str(self.maksukortti), "Kortilla on rahaa 10.00 euroa")
+
+    
