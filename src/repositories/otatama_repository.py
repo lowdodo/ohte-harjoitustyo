@@ -40,7 +40,5 @@ class OtatamaRepository:
     def get_random_tasks(self):
         return choice(self.tasks)
 
-
-
     #def break_for_task(self, task_id):
     #this is for when we later make the break-option possible. rn it is only possible to complete or abandon a task
