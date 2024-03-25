@@ -43,14 +43,7 @@ class TestKassapaate(unittest.TestCase):
         self.kassapaate.syo_edullisesti_kateisella(50)
         self.assertEqual(self.kassapaate.edulliset, 0)   
 
-#tsekkaa:
-    # def test_kateinen_epaonnistunut_edullinen_lounas(self):
-    #     pass
 
-    # def test_kateinen_edullinen_ei_negatiivinen(self):
-    #     pass
-
-#käteisosto maukas:
 
 #onnistuu
     def test_kateinen_ostaessa_maukasta_kassa_kasvaa(self):
@@ -76,9 +69,7 @@ class TestKassapaate(unittest.TestCase):
     def test_kateinen_maukkaasti_maara_ei_nouse(self):
         self.kassapaate.syo_maukkaasti_kateisella(50)
         self.assertEqual(self.kassapaate.maukkaat, 0)   
-#tsekkas??
-    # def test_kateinen_maukas_ei_negatiivinen(self):
-    #     pass
+
 
 #korttiosto edullinen:
 #onnistuu
@@ -151,4 +142,9 @@ class TestKassapaate(unittest.TestCase):
     def test_ei_negatiivista(self):
         self.kassapaate.lataa_rahaa_kortille(self.maksukortti, -100)
         self.assertEqual(self.maksukortti.saldo, 1000)
+
+#saldo  
+    def test_saldo_nakyy_euroina(self):
+        euroina = self.kassapaate.kassassa_rahaa_euroina()
+        self.assertEqual(self.kassapaate.kassassa_rahaa//100, euroina)
 
