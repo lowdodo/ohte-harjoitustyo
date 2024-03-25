@@ -1,27 +1,14 @@
-# DODON OTjuttunen
-
-### Seuraavaksi testaillaan tekstimuotoja
-
-
-**boldattu teksti tehdään tähtylöillä**
-
-*italikkia tehään yhdellä tähtylällä*
-
-
-~~tsuikulalla yliviivataan~~
-
-**nyt _yhdistellään_ juttuja**
-
-***omg kolme tähtylää tekee tämmösen***
-
-<sub>vai toimiiko sittenkään??</sub>
-
+# DODON OT HARJOITUS
 
 ## VIIKKO 1
 
-Tämä tässä on [gitlog harjoitus](https://github.com/lowdodo/ohte-harjoitustyo/blob/master/laskarit/viikko1/gitlog.txt)
+[Gitlog harjoitus](https://github.com/lowdodo/ohte-harjoitustyo/blob/master/laskarit/viikko1/gitlog.txt)
 
-Tämä tässä on [komentorivi harjoitus](https://github.com/lowdodo/ohte-harjoitustyo/blob/master/laskarit/viikko1/komentorivi.txt)
+[Komentorivi harjoitus](https://github.com/lowdodo/ohte-harjoitustyo/blob/master/laskarit/viikko1/komentorivi.txt)
 
 
+## VIIKKO 2
+[Testikattavuus](https://github.com/lowdodo/ohte-harjoitustyo/blob/master/laskarit/viikko2/testikattavuus.png)
 
+
+## VIIKKO 3
