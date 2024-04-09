@@ -15,3 +15,9 @@
 [Vaatimusmäärittely](https://github.com/lowdodo/ohte-harjoitustyo/blob/master/dokumentaatio/vaatimusmaarittely.md)
 
 ## VIIKKO 3
+[tasks](https://github.com/lowdodo/ohte-harjoitustyo/blob/master/tasks.py)
+
+[luokkakaavio](https://github.com/lowdodo/ohte-harjoitustyo/blob/master/laskarit/viikko3/Monopoli_luokkakaavio.md)
+
+[sekvenssikaavio](https://github.com/lowdodo/ohte-harjoitustyo/blob/master/laskarit/viikko3/sekvenssikaavio.md)
+
