@@ -7,8 +7,8 @@ Kyseessä on tarinankerronnallinen, pääasiassa tekstimuotoinen peli, jossa vä
 - hauska tarinallinen peli :)?
 
 ## suunnitellut toiminnallisuudet
-- menu 
-- liikkuminen levelistä toiseen, pitää pitää kirjaa millä levelillä mennään
+- menu - , pohja tehty, napit korjattava
+- liikkuminen levelistä toiseen, pitää pitää kirjaa millä levelillä mennään  , pidetään kirjaa missä levelissä, liikkumien korjattava
 - pulmia esim. "palapelimäisten" oikealle paikalle laitettavien asioiden muodossa
 - mahdollinen etenemisen tallentaminen
 - nimen tallentaminen peliin
