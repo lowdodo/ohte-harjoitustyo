@@ -1,10 +1,11 @@
-#isnt used or working, but will be later,,,? stuff to be moved here so index and game_loop looks clear
+# isnt used or working, but will be later,,,? stuff to be moved here so index and game_loop looks clear
 
-# #own place for levels, needs to be connected to ui: 
+# #own place for levels, needs to be connected to ui:
 import pygame
 from sprites.child import Child
 from sprites.petal import Petal
 from ui.menu import MenuView
+
 
 class Level:
     def __init__(self, screen, event_queue, level_number) -> None:
@@ -16,12 +17,13 @@ class Level:
 
     def start_level(self, level_view):
         if self.current_level == 0:
-            menu_view = MenuView(self.screen, self.handle_play, self.handle_quit)
+            menu_view = MenuView(
+                self.screen, self.handle_play, self.handle_quit)
             self.run_menu(menu_view)
         elif self.current_level == 1:
             self.run_prescreen(level_view)
         else:
-              self.run_level(level_view, self.current_level)
+            self.run_level(level_view, self.current_level)
 
     def run_menu(self, menu_view):
         running = True
@@ -31,11 +33,11 @@ class Level:
                     pygame.quit()
                     quit()
                 else:
-                    #should move to next level
+                    # should move to next level
                     menu_view.handle_event(event)
                     if menu_view.next_level():
                         running = False
-        
+
         self.run_prescreen()
 
     def run_prescreen(self, level_view):
