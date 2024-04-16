@@ -10,4 +10,3 @@ class TestMenu:
 
     def test_start(self, event):
         pass
-
