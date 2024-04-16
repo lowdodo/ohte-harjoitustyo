@@ -1,45 +1,40 @@
 import pygame
 
+
 class GameLoop:
-    def __init__(self, renderer, event_queue, clock, child_sprite, petal_sprite):
-        self._renderer = renderer
+    def __init__(self, event_queue, clock, level):
         self._event_queue = event_queue
         self._clock = clock
-        self._child_sprite = child_sprite
-        self._petal_sprite = petal_sprite
+        self._level = level
 
     def start(self):
+        running = True
         while True:
             if self._handle_events() == False:
                 break
-            self._update_sprites()
-            if self._renderer:
-                self._render()
-            self._clock.tick(60)
 
+            running = self._handle_events()
+            self._level.update()
+            self._clock.tick(60)
+            
     def _handle_events(self):
         for event in self._event_queue.get():
             if event.type == pygame.QUIT:
                 return False
             if event.type == pygame.KEYDOWN:
                 if event.key == pygame.K_LEFT:
-                    self._child_sprite.rect.x -= 6
+                    self._level.move_child(x = -6, y = 0)
                 if event.key == pygame.K_RIGHT:
-                    self._child_sprite.rect.x += 6
+                    self._level.move_child(x = 6, y = 0)
                 if event.key == pygame.K_UP:
-                     self._child_sprite.rect.y += 6
+                    self._level.move_child(x = 0, y = -6)
                 if event.key == pygame.K_DOWN:
                     pass  # do we have to crouch?
-            if self._petal_sprite:
                 if event.type == pygame.MOUSEBUTTONDOWN:
-                    self._petal_sprite.rect.x = event.pos[0]
-                    self._petal_sprite.rect.y = event.pos[1]
+                    self._level.move_petal(x = event.pos[0])
+                    self._level.move_petal(y = event.pos[1])
+
+        self._level.child_sprite.update()
+        self._level.petal_sprite.update()
         return True
     
-    def _update_sprites(self):
-        self._child_sprite.update()
-        if self._petal_sprite:
-            self._petal_sprite.update()
-
-    def _render(self):
-        self._renderer.render()
