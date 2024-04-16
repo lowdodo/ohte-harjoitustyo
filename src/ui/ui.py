@@ -5,6 +5,7 @@ from ui.menu import MenuView
 from ui.new_player import NewPlayerView
 from level import Level
 
+
 class UI:
     def __init__(self, screen, current_level, handle_play, handle_quit) -> None:
         self._screen = screen
@@ -12,7 +13,6 @@ class UI:
         self._current_level = current_level
         self._handle_play = handle_play
         self._handle_quit = handle_quit
-
 
     def start(self):
 
@@ -27,7 +27,7 @@ class UI:
             self._current_view.destroy()
 
         self._current_view = None
-    
+
     def _show_choose_player(self):
         self._hide_current_view()
         self._current_view = LoginView(
@@ -66,5 +66,3 @@ class UI:
         )
 
         self._current_view.render()
-
-

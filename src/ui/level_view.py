@@ -6,9 +6,10 @@ from sprites.child import Child
 from sprites.petal import Petal
 from game_loop import GameLoop
 
+
 class LevelView:
     def __init__(self, screen, current_level, level_instance) -> None:
-        self._screen = screen 
+        self._screen = screen
         self.font = pygame.font.SysFont(None, 30)
         self.NEXTbutton = imagepath("nextbutton.png")
         self.NEXTbutton_rect = self.NEXTbutton.get_rect(center=(400, 300))
@@ -25,20 +26,20 @@ class LevelView:
             elif event.type == pygame.MOUSEBUTTONDOWN:
                 if self.NEXTbutton_rect.collidepoint(event.pos):
                     self.handle_next_level()
-                
 
     def draw_prescreen(self):
         self._screen.fill((0, 0, 0))
-        text = pygame.font.SysFont(None, 25).render("What's that? Oh, a child.... come here", True, (255, 255, 255))
+        text = pygame.font.SysFont(None, 25).render(
+            "What's that? Oh, a child.... come here", True, (255, 255, 255))
         text_rect = text.get_rect(center=(640, 260))
         self._screen.blit(text, text_rect)
         child_sprite = Child((50, 350))
 
-        
         self._screen.blit(self.NEXTbutton, self.NEXTbutton_rect)
 
         PLAY_MOUSE_POS = pygame.mouse.get_pos()
-        PLAY_NEXT = Button(image=imagepath("nextbutton.png"), pos=(800, 500), text=None, font=None )
+        PLAY_NEXT = Button(image=imagepath("nextbutton.png"),
+                           pos=(800, 500), text=None, font=None)
         PLAY_NEXT.update(self._screen)
 
         if self.NEXTbutton_rect.collidepoint(PLAY_MOUSE_POS):
@@ -61,11 +62,11 @@ class LevelView:
             clock = pygame.time.Clock()
             self._screen.blit(child_sprite.image, child_sprite.rect)
             self._screen.blit(petal_sprite.image, petal_sprite.rect)
-            game_loop = GameLoop(event_queue=pygame.event, clock=clock, level=self._level_instance)
+            game_loop = GameLoop(event_queue=pygame.event,
+                                 clock=clock, level=self._level_instance)
             pygame.display.update()
             game_loop.start()
             pygame.draw.rect(self._screen)
-
 
     def render(self):
         if self.current_level == 0:

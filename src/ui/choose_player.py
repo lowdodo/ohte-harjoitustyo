@@ -2,6 +2,7 @@ import pygame
 from imagepath import imagepath
 from button import Button
 
+
 class LoginView:
     def __init__(self, screen, handle_show_new_player_view) -> None:
         self._screen = screen
@@ -9,15 +10,14 @@ class LoginView:
         self.font = pygame.font.SysFont(None, 24)
         self.selected_player = None
 
-        self._PLAYER1_BUTTON = Button(imagepath("button.png"), pos=(500, 200), 
-                            text="PLAYER 1", font=pygame.font.SysFont(None, 75))
-        
+        self._PLAYER1_BUTTON = Button(imagepath("button.png"), pos=(500, 200),
+                                      text="PLAYER 1", font=pygame.font.SysFont(None, 75))
+
         self._NEWPLAYER_BUTTON = Button(imagepath("button.png"), pos=(500, 300),
-                                text="NEW PLAYER", font= pygame.font.SysFont(None, 75))
+                                        text="NEW PLAYER", font=pygame.font.SysFont(None, 75))
 
-        self._QUIT_BUTTON = Button(image=imagepath("button.png"), pos=(500, 400), 
-                            text="QUIT", font=pygame.font.SysFont(None, 75))
-
+        self._QUIT_BUTTON = Button(image=imagepath("button.png"), pos=(500, 400),
+                                   text="QUIT", font=pygame.font.SysFont(None, 75))
 
     def render(self):
         self._screen.fill((0, 0, 0))
@@ -25,9 +25,9 @@ class LoginView:
 
         for button in [self._PLAYER1_BUTTON, self._NEWPLAYER_BUTTON, self._QUIT_BUTTON]:
             button.update(self._screen)
-        
+
         pygame.display.flip()
-        
+
     def handle_event(self, event):
         if event.type == pygame.MOUSEBUTTONDOWN:
             if self.player_button1.rect.collidepoint(event.pos):
@@ -37,4 +37,3 @@ class LoginView:
 
     def handle_player(self, player_name):
         self.selected_player = player_name
-
