@@ -10,20 +10,20 @@ class LoginView:
         self.font = pygame.font.SysFont(None, 24)
         self.selected_player = None
 
-        self._PLAYER1_BUTTON = Button(imagepath("button.png"), pos=(500, 200),
+        self._player1_button = Button(imagepath("button.png"), pos=(500, 200),
                                       text="PLAYER 1", font=pygame.font.SysFont(None, 75))
 
-        self._NEWPLAYER_BUTTON = Button(imagepath("button.png"), pos=(500, 300),
+        self._new_player_button = Button(imagepath("button.png"), pos=(500, 300),
                                         text="NEW PLAYER", font=pygame.font.SysFont(None, 75))
 
-        self._QUIT_BUTTON = Button(image=imagepath("button.png"), pos=(500, 400),
+        self._quit_button = Button(image=imagepath("button.png"), pos=(500, 400),
                                    text="QUIT", font=pygame.font.SysFont(None, 75))
 
     def render(self):
         self._screen.fill((0, 0, 0))
         # self.screen.blit(self.player_label, self.player_label_rect)
 
-        for button in [self._PLAYER1_BUTTON, self._NEWPLAYER_BUTTON, self._QUIT_BUTTON]:
+        for button in [self._player1_button, self._new_player_button, self._quit_button]:
             button.update(self._screen)
 
         pygame.display.flip()
