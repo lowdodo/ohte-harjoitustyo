@@ -1,5 +1,4 @@
 import pygame
-from pygame.sprite import AbstractGroup
 from imagepath import imagepath
 
 # this is our main guy we love them, tiny little fella
