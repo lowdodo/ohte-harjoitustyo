@@ -15,3 +15,8 @@ PÄIVÄ         AIKA      AIKA TUNTEINA        AIHE
 16.4. klo 12.30-15.30          3h        UI koitetaan saada asioita toimimaan
 16.4. klo 16.00-18.30           2,5h   UI epätoivo iskee
 16.4. klo 20-23.30             3,5h         ui alkaa toimia mutta napit meni rikki
+19.4. 14.00-18                  4h            napit toimii
+20.4.   13-18                   5h            lisää nappien korjausta
+21.4     14-20              6h             leveleitä, siistimistä
+23.4.    12-15                3h           leveleitä
+23.4.    20-23               3h          siistitään 
