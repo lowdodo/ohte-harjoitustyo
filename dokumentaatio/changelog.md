@@ -3,3 +3,6 @@
 - created UI and moved the functionality that belongs to ui side to there, in process broke things but started to fix them
 
 - created base for players
+
+#changes for week 5
+- fixed functionality for menu, buttons and first levels
