@@ -4,7 +4,7 @@ import pygame
 class GameLoop:
     def __init__(self, event_queue, clock, level):
         self._event_queue = event_queue
-        self._clock = clock
+        self.clock = clock
         self._level = level
 
     def start(self):
@@ -14,7 +14,7 @@ class GameLoop:
 
             self._handle_events()
             self._level.update()
-            self._clock.tick(60)
+            self.clock.tick(60)
 
     def _handle_events(self):
         for event in self._event_queue.get():
