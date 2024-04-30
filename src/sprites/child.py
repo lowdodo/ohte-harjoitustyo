@@ -1,10 +1,15 @@
+""" 
+Module for child sprite.
+"""
+
 import pygame
 from imagepath import imagepath
 
 # this is our main guy we love them, tiny little fella
 # for now just a guy, maybe later moves.
 
-# reference from HY sokoban reference game https://github.com/ohjelmistotekniikka-hy/pygame-sokoban/tree/main
+# reference from HY sokoban reference game
+# https://github.com/ohjelmistotekniikka-hy/pygame-sokoban/tree/main
 
 
 class Child(pygame.sprite.Sprite):
@@ -14,5 +19,3 @@ class Child(pygame.sprite.Sprite):
         self.rect = self.image.get_rect()
         self.rect.x = pos[0]
         self.rect.y = pos[1]
-
-# later method for updating the image when in different areas of map and or moving
