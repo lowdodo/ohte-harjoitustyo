@@ -6,3 +6,6 @@
 
 #changes for week 5
 - fixed functionality for menu, buttons and first levels
+
+#changes for week 6
+- added new levels, make rotations, added player repository (uncomplete)
