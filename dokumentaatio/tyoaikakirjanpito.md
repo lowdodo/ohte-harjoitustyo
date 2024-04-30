@@ -20,3 +20,8 @@ PÄIVÄ         AIKA      AIKA TUNTEINA        AIHE
 21.4     14-20              6h             leveleitä, siistimistä
 23.4.    12-15                3h           leveleitä
 23.4.    20-23               3h          siistitään 
+26.4.     14.30-17.30               3h       uusi level
+26.4.     18-20               2h              uusi level
+27.4.      14-18               4h             siistimistä, liikuttamista
+29.4.     14.30-18              3,5h            rotaatio
+30.4.     14-20                 5h               rotaation parantamista, tekstiä, player rep                              
