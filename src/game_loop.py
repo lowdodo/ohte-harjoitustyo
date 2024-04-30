@@ -1,3 +1,6 @@
+""" 
+Module to import game loop.
+"""
 import pygame
 
 
