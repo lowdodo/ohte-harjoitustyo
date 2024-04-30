@@ -21,3 +21,13 @@
 
 [sekvenssikaavio](https://github.com/lowdodo/ohte-harjoitustyo/blob/master/laskarit/viikko3/sekvenssikaavio.md)
 
+##Viikko4
+
+
+##VIIKKO 5
+[vaatimusmäärittely](https://github.com/lowdodo/ohte-harjoitustyo/blob/master/dokumentaatio/vaatimusmaarittely.md)
+
+##VIIKKO 6
+[changelog](https://github.com/lowdodo/ohte-harjoitustyo/blob/master/dokumentaatio/changelog.md)
+[guide](https://github.com/lowdodo/ohte-harjoitustyo/blob/master/dokumentaatio/guide.md)
+[arkkitehtuuri](https://github.com/lowdodo/ohte-harjoitustyo/blob/master/dokumentaatio/arkkitehtuuri.md)
