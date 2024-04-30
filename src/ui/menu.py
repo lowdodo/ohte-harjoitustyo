@@ -1,3 +1,7 @@
+"""
+Module for the ui side of menu.
+"""
+
 import pygame
 from imagepath import imagepath
 from button import Button
@@ -5,7 +9,7 @@ from button import Button
 
 class MenuView:
     """Class that creates the menu
-    
+
     Attributes:
         _screen: The surface of the game.
         _handle_play: The function to handle the click of Play-button.
@@ -15,9 +19,10 @@ class MenuView:
         _play_button: The button for starting the game.
         _quit_button: The button for quitting the game.
         """
+
     def __init__(self, screen, handle_play, handle_quit, event_queue, show_level_view) -> None:
         """Constructor for menu
-        
+
         Args:
             screen: The surface of the game
             handle_play: The function to handle the click of Play-button.
@@ -38,7 +43,7 @@ class MenuView:
 
     def render(self):
         """Renders the buttons to the surface
-        
+
         """
         self._screen.fill((0, 0, 0))
 
@@ -56,7 +61,7 @@ class MenuView:
 
     def handle_event(self):
         """Handles events like mouseinteraction
-        
+
         Either quits the game or takes to new level.
         """
         running = True
