@@ -1,7 +1,6 @@
-# isnt used or working, but will be later,,,?
-# stuff to be moved here so index and game_loop looks clear
-
-# #own place for levels, needs to be connected to ui:
+"""
+Module for levels to function.
+"""
 import pygame
 from sprites.child import Child
 from sprites.petal import Petal
@@ -11,7 +10,7 @@ from ui.level_view import LevelView
 
 class Level:
     def __init__(self, screen, event_queue, current_level) -> None:
-        self.current_level = current_level  # keeps track of current level
+        self.current_level = current_level
         self.screen = screen
         self.event_queue = event_queue
         self.child_sprite = Child()
@@ -70,17 +69,14 @@ class Level:
         running = True
 
         while running:
+            pygame.display.flip()
             level_view.handle_event()
             level_view.draw_level()
-            pygame.display.flip()
 
             for event in self.event_queue.get():
                 if event.type == pygame.QUIT:
                     pygame.quit()
                     quit()
-                elif event.type == pygame.MOUSEBUTTONDOWN:
-                    if level_view.NEXTbutton_rect.collidepoint(event.pos):
-                        self.handle_play()
 
     def update(self):
         if self.child_sprite:
