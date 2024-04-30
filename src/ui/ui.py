@@ -1,4 +1,6 @@
-import pygame
+"""
+Module for the main ui side.
+"""
 from ui.choose_player import LoginView
 from ui.level_view import LevelView
 from ui.menu import MenuView
@@ -6,6 +8,19 @@ from ui.new_player import NewPlayerView
 
 
 class UI:
+    """
+    Class for main part of UI, relates to specific ui views.
+
+    Attributes:
+        _screen = view.
+        _current_view = what is displayed at the moment.
+        _current_level = keeps track of current level.
+        _handle_play = function for changing the level.
+        _handle_quit = function for quiting the game.
+        _event_queue = keeps list of events after call.
+
+    """
+
     def __init__(self, screen, handle_play, handle_quit, event_queue, current_level) -> None:
         self._screen = screen
         self._current_view = None
