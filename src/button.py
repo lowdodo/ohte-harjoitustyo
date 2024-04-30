@@ -1,15 +1,16 @@
 class Button():
     """Class representing buttons in the game.
-    
+
     Attributes:
         image: Surface of the button.
         rect: Physical part of the button.
         text: Possible text on the button.
         font: The font of the possible text.
     """
+
     def __init__(self, image, pos, text, font):
         """Constructor to creata a new button.
-        
+
         Attributes:
             image: Surface of the button.
             rect: Physical part of the button.
@@ -23,7 +24,7 @@ class Button():
 
     def render_text(self):
         """Renders the text on top of the button's surface.
-        
+
         Returns:
             Tupple of the text wanted on the screen and the rect for it.
         """
@@ -35,7 +36,7 @@ class Button():
 
     def update(self, screen):
         """Updates the buttons image to the screen, and possible text
-        
+
         Args:
             screen: Screen that shows to the player.
         """
@@ -46,9 +47,9 @@ class Button():
 
     def check_for_input(self, pos):
         """Checks if the position given is within the rect of the button
-        
+
         Args: 
             pos: position of the button pressed
-        
+
         """
         return self.rect.collidepoint(pos)
