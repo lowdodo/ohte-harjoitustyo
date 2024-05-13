@@ -24,4 +24,11 @@ PÄIVÄ         AIKA      AIKA TUNTEINA        AIHE
 26.4.     18-20               2h              uusi level
 27.4.      14-18               4h             siistimistä, liikuttamista
 29.4.     14.30-18              3,5h            rotaatio
-30.4.     14-20                 5h               rotaation parantamista, tekstiä, player rep                              
+30.4.     14-20                 5h               rotaation parantamista, tekstiä, player rep  
+2.5.       15-16                 1h                leveleitä, petalin säätämistä     
+5.5.          20.30
+6.5.        17-21                4h                user database
+10.5.      16-18                 2h                 database
+11.5.      17-21:30            4,5h                 siistimistä, petalin säätöä
+12.5.       15-18               3h                   leveleitä
+12.5.        20-22                2h                  sekasälää
