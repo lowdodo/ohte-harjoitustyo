@@ -11,9 +11,10 @@ class PlayerRepository:
 
     def name_the_player(self, name):
         cursor = self._connection.cursor()
-        cursor.execute("""INSERT INTO player(name) VALUES (?)""" (name,))
+        print("name", name, "type", type(name))
+        cursor.execute("INSERT INTO player(name) VALUES (?);", (name,))
         self._connection.commit()
-        self._player = name
+        return name
     
     def get_player_name(self):
         return self._player
