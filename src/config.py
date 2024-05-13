@@ -8,5 +8,5 @@ try:
 except FileNotFoundError:
     pass
 
-GAME_FILENAME = os.getenv("GAME_FILENAME") or "game.csv"
-GAME_FILE_PATH = os.path.join(dirname, "..", "data", GAME_FILENAME)
+GAME_FILENAME = os.getenv("GAME_FILENAME") or "data.csv"
+DATABASE_FILE_PATH = os.path.join(dirname, "..", "data", GAME_FILENAME)
