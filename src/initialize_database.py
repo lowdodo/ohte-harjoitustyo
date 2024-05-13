@@ -10,7 +10,6 @@ def create_player_table(connection):
                    (name TEXT);""")
     connection.commit()
 
-
 def initialize_database():
     connection = get_database_connection()
     drop_table(connection)
