@@ -3,8 +3,12 @@
 poetry install 
 
 
-#start the game
+#build the database:
 2. 
+poetry run invoke build
+
+#start the game
+3. 
 poetry run invoke start
 
 ##pylint:
