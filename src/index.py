@@ -29,7 +29,7 @@ def main():
     pygame.display.set_caption("Main menus")
     event_queue = EventQueue()
     clock = Clock()
-    level = Level(screen, event_queue, current_level=2)
+    level = Level(screen, event_queue, current_level=None)
     ui = UI(screen, level.handle_play, level.handle_quit,
             event_queue, level.current_level)
     ui.start()
