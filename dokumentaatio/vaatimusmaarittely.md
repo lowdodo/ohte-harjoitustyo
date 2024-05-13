@@ -16,7 +16,7 @@ Kyseessä on tarinankerronnallinen, pääasiassa tekstimuotoinen peli, jossa vä
 
 - mahdollinen etenemisen tallentaminen
 
-- nimen tallentaminen peliin aloitettu
+- nimen tallentaminen peliin aloitettu tehty
 
 
 # perusversion toiminnallisuus
